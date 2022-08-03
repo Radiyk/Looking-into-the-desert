@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/FirstScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/NEWSscene.unity
+    guid: 2c1b708bda6ad597aac2687f6a0cee76
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 008ae436c4c0ef77aaecf4fd7d8c8478
+  - enabled: 1
+    path: Assets/Scenes/Select-Hero.unity
+    guid: d9bc251c3f74be813814b0b6ba4eb08f
+  - enabled: 1
+    path: Assets/Scenes/level-1.unity
+    guid: b00b34ca984f131af8b1ae51d036b641
+  - enabled: 1
+    path: Assets/Scenes/LockScene.unity
+    guid: 8a2755f008a7002489b583efbd001889
+  - enabled: 1
+    path: Assets/Scenes/level-1 1.unity
+    guid: 23dfcc844c5adeceda6c490fdbe654b5
+  - enabled: 1
+    path: Assets/Scenes/level-2.unity
+    guid: 6639bc8635ccc80b2ac3aaf014d8e268
+  m_configObjects: {}
