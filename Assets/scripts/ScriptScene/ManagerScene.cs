@@ -6,6 +6,13 @@ using UnityEngine.SceneManagement;
 public class ManagerScene : MonoBehaviour
 {
 
+	int index;
+
+	void Start()
+    {
+		index = PlayerPrefs.GetInt("CurrentScene");
+	}
+
 	public  void LoadExit()
 	{
 		SceneManager.LoadScene(0);
@@ -32,13 +39,15 @@ public class ManagerScene : MonoBehaviour
 
 	public  void LoadFirstLevel()
 	{
+		PlayerPrefs.DeleteAll();
 		SceneManager.LoadScene(4);
 	}
 
 	
 	public  void LoadProceed()
 	{
-		//SceneManager.LoadScene(2);
+		
+		SceneManager.LoadScene(index);
 	}
 
 }
