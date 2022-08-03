@@ -291,7 +291,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 74264841}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9d1ba97fbac4df98b895de68d130d1d, type: 3}
+  m_Script: {fileID: 11500000, guid: f89fcf57a97c199859181c5dfa800bac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &157349009
@@ -831,8 +831,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 74264845}
-        m_TargetAssemblyTypeName: NewsScene, Assembly-CSharp
-        m_MethodName: Exit
+        m_TargetAssemblyTypeName: ManagerScene, Assembly-CSharp
+        m_MethodName: LoadExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

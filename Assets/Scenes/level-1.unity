@@ -3761,11 +3761,11 @@ GameObject:
   - component: {fileID: 481704273}
   - component: {fileID: 481704272}
   - component: {fileID: 481704271}
-  - component: {fileID: 481704274}
   - component: {fileID: 481704275}
   - component: {fileID: 481704276}
   - component: {fileID: 481704277}
   - component: {fileID: 481704278}
+  - component: {fileID: 481704274}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3832,7 +3832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481704270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.893745, y: 0.23200274, z: -13.120001}
+  m_LocalPosition: {x: 43.893738, y: 0.23418522, z: -13.120001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3847,7 +3847,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 481704270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d42f9cc7cff79943801481de327f744, type: 3}
+  m_Script: {fileID: 11500000, guid: f89fcf57a97c199859181c5dfa800bac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &481704275
@@ -10888,7 +10888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177250961}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.03638, y: -1.4852809, z: -15.960148}
+  m_LocalPosition: {x: 75.03637, y: -1.4852809, z: -15.960148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412249333}
@@ -14481,7 +14481,7 @@ PrefabInstance:
     - target: {fileID: 6723427983861154576, guid: b3c56fe6abed6d82fae7b1694c7732aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 481704274}
+      objectReference: {fileID: 0}
     - target: {fileID: 6723427983861154576, guid: b3c56fe6abed6d82fae7b1694c7732aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadExet
@@ -14632,7 +14632,11 @@ PrefabInstance:
       objectReference: {fileID: 481704274}
     - target: {fileID: 8459059632914891466, guid: b3c56fe6abed6d82fae7b1694c7732aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadExet
+      value: LoadExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459059632914891466, guid: b3c56fe6abed6d82fae7b1694c7732aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ManagerScene, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8459059633001373772, guid: b3c56fe6abed6d82fae7b1694c7732aa, type: 3}
       propertyPath: Play
