@@ -11,11 +11,6 @@ public class ChestOpen : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-	// public void OpenChest()
-	// {
-	// 	Debug.Log("Yes");
-	// 	anim.SetTrigger("PiperShow");
-	// }
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{

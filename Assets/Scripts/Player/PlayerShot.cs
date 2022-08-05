@@ -28,8 +28,6 @@ public class PlayerShot : MonoBehaviour
 
     void Update()
     {
-        // Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-		// float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
 
 		if (timeBtwShots <= 0)
 		{
@@ -59,8 +57,6 @@ public class PlayerShot : MonoBehaviour
 	{
 		anim.SetTrigger("isAttack");
 	}
-
-
 
 
 

@@ -163,8 +163,14 @@ public class Player : MonoBehaviour
 		if (other.CompareTag("Portal"))
 		{
 			MyAudioSource.PlayOneShot(portal);
+			anim.SetTrigger("inPortal");
+		}
+		else if (other.CompareTag("PiperScroll"))
+		{
+			MyAudioSource.PlayOneShot(portal);
 			anim.SetTrigger("isPiper");
 		}
+		
 	}
 
 	
@@ -223,14 +229,14 @@ public class Player : MonoBehaviour
 	}
 
 
-	// private void ReloadSceneMarket()
-	// {
-	// 	SceneManager.LoadScene(2);
-	// }
-
-	private void LostScene()
+	private void LostSceneFinal()
 	{
 		SceneManager.LoadScene(0);
+	}
+
+	private void LostSceneLast()
+	{
+		SceneManager.LoadScene(7);
 	}
 
 	private void ReloadScene()

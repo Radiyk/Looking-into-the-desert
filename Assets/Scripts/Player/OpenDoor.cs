@@ -13,7 +13,6 @@ public class OpenDoor : MonoBehaviour
 	private AudioClip BTN;
 	private AudioClip speech;
 	private AudioClip Perehod;
-    // Start is called before the first frame update
     void Start()
     {
 		anim = GetComponent<Animator>();
@@ -26,34 +25,20 @@ public class OpenDoor : MonoBehaviour
 
     
 
-	private void OnCollisionEnter2D(Collision2D col)
+	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if (col.gameObject.CompareTag("Player"))
+		if (other.CompareTag("Player"))
 		{
 			anim.SetTrigger("doorSpeech");
 			MyAudioSource.PlayOneShot(speech);
+			
 		}
 	}
 
-
-	private void OnCollisionExit2D(Collision2D col)
-	{
-		if (col.gameObject.CompareTag("Player"))
-		{
-			AnswerIsNo();
-		}
-	}
-
+	
 	public void AnswerIsNo()
 	{
-		anim.SetBool("AnswerIsNo", true);
-		Debug.Log("HH");
-	}
-
-	public void BackAnswerIsNo()
-	{
-		anim.SetBool("AnswerIsNo", false);
-		Debug.Log("gg");
+		anim.SetTrigger("AnswerIsNo");
 	}
 
 

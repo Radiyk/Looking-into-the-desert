@@ -12,7 +12,7 @@ public class FallInBottom : MonoBehaviour
 	public  AudioClip[] AudioClips;
 	private AudioClip fall;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
 		MyAudioSource = GetComponent<AudioSource>();
@@ -26,7 +26,6 @@ public class FallInBottom : MonoBehaviour
 	{
 		if (col.gameObject.CompareTag("SpaceDead"))
 		{
-			// Debug.Log("SpaceDead");
 			MyAudioSource.PlayOneShot(fall);
 			anim.Play("Tim-aute-Fall");
 		}

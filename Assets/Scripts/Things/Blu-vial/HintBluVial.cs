@@ -23,6 +23,6 @@ public class HintBluVial : MonoBehaviour
     IEnumerator Destroyed()
     {
         yield return new WaitForSeconds (6f);
-        Destroy(gameObject);
+        hint.SetActive(false);
     }
 }
